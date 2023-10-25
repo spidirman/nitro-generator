@@ -17,7 +17,6 @@ class NitroGen:
         os.system('cls' if os.name == 'nt' else 'clear')
         if os.name == "nt":
             print("")
-            ctypes.windll.kernel32.SetConsoleTitleW("Nitro Generator and Checker - Made by spidirman")
         else:
             print(f'\33]0;Nitro Generator and Checker - Made by spidirman', end='', flush=True)
 
