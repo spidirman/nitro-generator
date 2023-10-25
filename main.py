@@ -86,7 +86,8 @@ Resultats:
             else:
                 self.invalid += 1
         except Exception as e:
-            print(f" Error | {url }")
+            print(f" Error | {e}")
+            time.sleep(1)
 
     def quickChecker(self, nitro, notify=None):
         url = f"https://discordapp.com/api/v6/entitlements/gift-codes/{nitro}?with_application=false&with_subscription_plan=true"
