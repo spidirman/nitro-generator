@@ -36,9 +36,7 @@ class NitroGen:
 ███████╗██████╔╝██║██║  ██║██║██████╔╝██╔████╔██║███████║██╔██╗ ██║                        
 ╚════██║██╔═══╝ ██║██║  ██║██║██╔══██╗██║╚██╔╝██║██╔══██║██║╚██╗██║                        
 ███████║██║     ██║██████╔╝██║██║  ██║██║ ╚═╝ ██║██║  ██║██║ ╚████║                        
-╚══════╝╚═╝     ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝                        
-                                                                                           
-                       ░                                                   
+╚══════╝╚═╝     ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝                                                                     
 """)
         time.sleep(2)
         self.slowType("mon github : https://github.com/le-loup-alpha/", .02)
@@ -60,8 +58,6 @@ class NitroGen:
 
         for thread in threads:
             thread.join()
-
-        ctypes.windll.kernel32.SetConsoleTitleW(f"Nitro Generator and Checker - {len(self.valid)} Valid | {self.invalid} Invalid - Made by spidirman")
 
         print(Fore.YELLOW + f"""
 Resultats:
@@ -90,7 +86,6 @@ Resultats:
                 self.valid.append(url)
             else:
                 self.invalid += 1
-                ctypes.windll.kernel32.SetConsoleTitleW(f"Nitro Generator and Checker - {len(self.valid)} Valid | {self.invalid} Invalid - Made by spidirman")
         except Exception as e:
             print(f" Error | {url }")
 
