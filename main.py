@@ -38,7 +38,7 @@ class NitroGen:
 ╚══════╝╚═╝     ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝                                                                     
 """)
         time.sleep(2)
-        self.slowType("mon github : https://github.com/le-loup-alpha/", .02)
+        self.slowType("mon github : https://github.com/spidirman/", .02)
         time.sleep(1)
         self.slowType("\nTu veux générer combien de liens ? : ", .02, newLine=False)
 
@@ -90,7 +90,7 @@ Resultats:
             time.sleep(1)
 
     def quickChecker(self, nitro, notify=None):
-        url = f"https://discordapp.com/api/v6/entitlements/gift-codes/{nitro}?with_application=false&with_subscription_plan=true"
+        url = f"https://discordapp.com/api/v10/entitlements/gift-codes/{nitro}?with_application=false&with_subscription_plan=true"
         response = requests.get(url)
 
         if response.status_code == 200:
